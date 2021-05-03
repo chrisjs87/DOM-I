@@ -55,7 +55,15 @@ navAbout.textContent = siteContent['nav']['nav-item-5'];
 let navContact = navAbout.nextElementSibling;
 navContact.textContent = siteContent['nav']['nav-item-6'];
 
+//cta
+let bigText = document.querySelector('.cta h1');
+bigText.textContent = siteContent['cta']['h1'];
+let buttonText = document.querySelector('.cta button');
+buttonText.textContent = siteContent['cta']['button'];
+let codeImg = document.querySelector('.cta img');
+codeImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
+//main content
 
 
 
