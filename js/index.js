@@ -91,3 +91,17 @@ let visionH = document.querySelector(".bottom-content :nth-child(3) :nth-child(1
 visionH.textContent = siteContent["main-content"]["vision-h4"];
 let visionP = document.querySelector(".bottom-content :nth-child(3) :nth-child(2)");
 visionP.textContent = siteContent["main-content"]["vision-content"];
+
+//contact section
+let contactH = document.querySelector(".contact :nth-child(1)");
+contactH.textContent = siteContent['contact']['contact-h4'];
+let address = document.querySelector(".contact :nth-child(2)");
+address.textContent = siteContent['contact']['address'];
+
+address.innerHTML = "123 Way 456 Street <br>Somewhere, USA";
+
+let phone = document.querySelector(".contact :nth-child(3)");
+phone.textContent = siteContent['contact']['phone'];
+let email = document.querySelector(".contact :nth-child(4)");
+email.textContent = siteContent['contact']['email'];
+
