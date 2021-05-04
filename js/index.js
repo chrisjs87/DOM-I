@@ -54,6 +54,9 @@ let navAbout = navFeatures.nextElementSibling;
 navAbout.textContent = siteContent['nav']['nav-item-5'];
 let navContact = navAbout.nextElementSibling;
 navContact.textContent = siteContent['nav']['nav-item-6'];
+//nav text color change to green
+let navi = document.querySelector('header nav');
+navi.style.backgroundColor = 'green';
 
 //cta
 let bigText = document.querySelector('.cta h1');
@@ -108,3 +111,13 @@ email.textContent = siteContent['contact']['email'];
 //footer
 let copyright = document.querySelector("footer p");
 copyright.textContent = siteContent["footer"]['copyright'];
+
+//add two new items to the nav system with .appendChild() and .prepend()
+const blogLink = document.createElement('a');
+blogLink.textContent = 'Blog';
+blogLink.href = '#';
+document.querySelector('nav').appendChild(blogLink);
+const testimonialsLink = document.createElement('a');
+testimonialsLink.textContent = 'Testimonials';
+testimonialsLink.href = '#';
+document.querySelector('nav').prepend(testimonialsLink);
