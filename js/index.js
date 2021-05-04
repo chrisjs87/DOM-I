@@ -105,3 +105,6 @@ phone.textContent = siteContent['contact']['phone'];
 let email = document.querySelector(".contact :nth-child(4)");
 email.textContent = siteContent['contact']['email'];
 
+//footer
+let copyright = document.querySelector("footer p");
+copyright.textContent = siteContent["footer"]['copyright'];
