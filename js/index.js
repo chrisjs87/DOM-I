@@ -60,7 +60,7 @@ let bigText = document.querySelector('.cta h1');
 bigText.textContent = siteContent['cta']['h1'];
 let buttonText = document.querySelector('.cta button');
 buttonText.textContent = siteContent['cta']['button'];
-let codeImg = document.querySelector('.cta img');
+let codeImg = document.querySelector('#cta-img');
 codeImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
 bigText.innerHTML = "DOM <br>Is<br> Awesome"; 
@@ -75,8 +75,8 @@ let aboutH = document.querySelector('.top-content :nth-child(2) :nth-child(1)');
 aboutH.textContent = siteContent["main-content"]["about-h4"];
 let aboutP = document.querySelector('.top-content :nth-child(2) :nth-child(2)');
 aboutP.textContent = siteContent["main-content"]["about-content"];
-let mainContentImg = document.querySelector('.middle-img');
 //img
+let mainContentImg = document.querySelector('#middle-img');
 mainContentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 //bottom
 let servicesH = document.querySelector(".bottom-content :nth-child(1) :nth-child(1)");
