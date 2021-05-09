@@ -40,3 +40,84 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//nav
+let navServices = document.querySelector('a');
+navServices.textContent = siteContent['nav']['nav-item-1'];
+let navProduct = navServices.nextElementSibling;
+navProduct.textContent = siteContent['nav']['nav-item-2'];
+let navVision = navProduct.nextElementSibling;
+navVision.textContent = siteContent['nav']['nav-item-3'];
+let navFeatures = navVision.nextElementSibling;
+navFeatures.textContent = siteContent['nav']['nav-item-4'];
+let navAbout = navFeatures.nextElementSibling;
+navAbout.textContent = siteContent['nav']['nav-item-5'];
+let navContact = navAbout.nextElementSibling;
+navContact.textContent = siteContent['nav']['nav-item-6'];
+//nav text color change to green
+let navi = document.querySelector('header nav');
+navi.style.backgroundColor = 'green';
+
+//cta
+let bigText = document.querySelector('.cta h1');
+bigText.textContent = siteContent['cta']['h1'];
+let buttonText = document.querySelector('.cta button');
+buttonText.textContent = siteContent['cta']['button'];
+let codeImg = document.querySelector('#cta-img');
+codeImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+bigText.innerHTML = "DOM <br>Is<br> Awesome"; 
+
+//main content
+//top
+let featuresH = document.querySelector('.top-content :nth-child(1) :nth-child(1)');
+featuresH.textContent = siteContent["main-content"]["features-h4"];
+let featuresP = document.querySelector('.top-content :nth-child(1) :nth-child(2)');
+featuresP.textContent = siteContent["main-content"]["features-content"];
+let aboutH = document.querySelector('.top-content :nth-child(2) :nth-child(1)');
+aboutH.textContent = siteContent["main-content"]["about-h4"];
+let aboutP = document.querySelector('.top-content :nth-child(2) :nth-child(2)');
+aboutP.textContent = siteContent["main-content"]["about-content"];
+//img
+let mainContentImg = document.querySelector('#middle-img');
+mainContentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+//bottom
+let servicesH = document.querySelector(".bottom-content :nth-child(1) :nth-child(1)");
+servicesH.textContent = siteContent["main-content"]["services-h4"];
+let servicesP = document.querySelector(".bottom-content :nth-child(1) :nth-child(2)");
+servicesP.textContent = siteContent["main-content"]["services-content"];
+let productH = document.querySelector(".bottom-content :nth-child(2) :nth-child(1)");
+productH.textContent = siteContent["main-content"]["product-h4"];
+let productP = document.querySelector(".bottom-content :nth-child(2) :nth-child(2)");
+productP.textContent = siteContent["main-content"]["product-content"];
+let visionH = document.querySelector(".bottom-content :nth-child(3) :nth-child(1)");
+visionH.textContent = siteContent["main-content"]["vision-h4"];
+let visionP = document.querySelector(".bottom-content :nth-child(3) :nth-child(2)");
+visionP.textContent = siteContent["main-content"]["vision-content"];
+
+//contact section
+let contactH = document.querySelector(".contact :nth-child(1)");
+contactH.textContent = siteContent['contact']['contact-h4'];
+let address = document.querySelector(".contact :nth-child(2)");
+address.textContent = siteContent['contact']['address'];
+
+address.innerHTML = "123 Way 456 Street <br>Somewhere, USA";
+
+let phone = document.querySelector(".contact :nth-child(3)");
+phone.textContent = siteContent['contact']['phone'];
+let email = document.querySelector(".contact :nth-child(4)");
+email.textContent = siteContent['contact']['email'];
+
+//footer
+let copyright = document.querySelector("footer p");
+copyright.textContent = siteContent["footer"]['copyright'];
+
+//add two new items to the nav system with .appendChild() and .prepend()
+const blogLink = document.createElement('a');
+blogLink.textContent = 'Blog';
+blogLink.href = '#';
+document.querySelector('nav').appendChild(blogLink);
+const testimonialsLink = document.createElement('a');
+testimonialsLink.textContent = 'Testimonials';
+testimonialsLink.href = '#';
+document.querySelector('nav').prepend(testimonialsLink);
